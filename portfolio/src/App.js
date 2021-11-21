@@ -4,10 +4,10 @@ import React, { useState, useEffect, useRef } from "react";
 import p5 from "p5";
 import Grow from "@mui/material/Grow";
 import Box from "@mui/material/Box";
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import THREE from 'three';
+// import THREE from 'three';
 
 function App() {
   const [vantaEffect, setVantaEffect] = useState(0)
