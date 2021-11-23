@@ -1,5 +1,27 @@
+@media (max-width: 978px) {
+    .container {
+      padding:0;
+      margin:0;
+    }
+    .About-header, .App-header, .Hire-me{
+      padding: 3% !important;
+    }
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+}
+
+body {
+  background: #282828;
+}
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -13,16 +35,53 @@
   }
 }
 
+.Logo {
+  padding-right: 10%;
+
+}
 .App-header {
   min-height: 100vh;
+  padding-left: 30%; 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.About-header{
+  padding:20%;
+  min-height: 150vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background: #282828;
+}
+
+.Hire-me {
+  padding:20%;
+  min-height: 150vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background: #282828;
+}
+
+.active, a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+#highlight {
+  color: #fbf1c7;
+}
 .App-link {
   color: #61dafb;
 }
@@ -34,4 +93,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.hey {
+  padding:0;
+  margin:0;
 }
