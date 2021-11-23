@@ -9,7 +9,7 @@ import * as Scroll from 'react-scroll';
 //import * as THREE from 'three';
 import TRUNK from 'vanta/dist/vanta.trunk.min';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 
 let scroll = Scroll.animateScroll;
 
@@ -48,8 +48,7 @@ function App() {
             <a onClick={scroll.scrollToTop()} href="#"><img
               src="rabbit.png"
               width="25"
-              height="25"
-              
+              height="25" 
               /> 
             </a>
           </Navbar.Brand>
@@ -105,6 +104,21 @@ function App() {
       </div>
       <div className="About-header">
         <h1 name="certs">Certificates</h1>
+        <div>
+          <div>
+
+          <Button variant="outline-secondary">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/certificate/UC-4295c6b1-0f58-4e76-847e-30144d7d258c/">Discrete Math</a>
+          </Button>
+          </div>
+          <div>
+          
+          <Button variant="outline-secondary">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.freecodecamp.org/certification/robdev/javascript-algorithms-and-data-structures">Javascript Data Structures & Algorithms</a>
+          </Button>
+          
+          </div>
+        </div>
       </div>
       <div className="Hire-me">
         <h1 name="hire">Hire Me</h1>
