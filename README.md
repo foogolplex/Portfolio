@@ -1,2 +1,2 @@
 # Portfolio
-It uses React, Material UI, and Vanta.js for the background.
+It uses React, Node.js, Material UI, and Vanta.js for the background.
