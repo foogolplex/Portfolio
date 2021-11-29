@@ -47,6 +47,11 @@ function Form(){
     </div>
   );
 }
+var Hspan = (props) => {
+  return (
+    <span id="highlight">{props.text}</span>
+  )
+}
 var Landing = (props) => {
   var checked = props.checked;
   var myRef = props.myRef;
@@ -56,15 +61,15 @@ var Landing = (props) => {
         style={{ transformOrigin: '0 0 0' }}
         {...(checked ? { timeout: 2000 } : {})}>
         <Box>
-          <p>Hey there 👋,</p>
-          <h1 className="display-3">I'm Robert Lazarov.</h1>
+          <p>Hey there 👋🏻,</p>
+          <h1 className="display-3">I'm <span id="name">Robert Lazarov</span>.</h1>
         </Box>
       </Grow>
       <Grow in={checked}
         style={{ transformOrigin: '0 0 0' }}
         {...(checked ? { timeout: 4000 } : {})}>
         <Box> 
-          <h1 className="display-3">I'm a <span id="highlight">Backend Developer.</span></h1>
+          <h1 className="display-3">I'm a <Hspan text="Backend Developer" /></h1> 
         </Box> 
       </Grow>
     </div>
@@ -74,11 +79,13 @@ var MainContent = () => {
   return (
     <div>
       <div className="About-header">
+        <h1 className="display-3" style={{paddingBottom: '2%'}}>🐇</h1>   
         <h1 name="About" className="display-3">About</h1>
         <h5>
-          I'm capable of making a variety of backend applications primarily in <span id="highlight"> Node.js </span> and <span id="highlight"> Express.js</span>. I'm also comfortable
+          I'm capable of making a variety of backend applications primarily in <Hspan text="Node.js" /> and <Hspan text="Express.js" />. I'm also comfortable
           with a few front-end technologies such as <span id="highlight">React</span>
-            , <span id="highlight">Material UI</span>, and <span id="highlight">Reactstrap</span>.<br></br> If I <strong>need</strong> it, I'll <strong>learn</strong> it.
+            , <span id="highlight">Material UI</span>, and <span id="highlight">Reactstrap</span>.
+            <br></br> If I <strong>need</strong> it, I'll <strong>learn</strong> it.
         </h5>
       </div>
       <div className="Projects-header">
