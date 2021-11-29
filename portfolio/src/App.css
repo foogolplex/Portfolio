@@ -1,13 +1,16 @@
 @media (max-width: 978px) {
     .About-header, .App-header, .Hire-me{
       padding: 3% !important;
+      
     }
-
+    .display-3{
+      font-size:7vw !important; 
+    }
 }
-
 body {
   background: #282828;
 }
+
 .App {
   text-align: left;
 }
@@ -39,7 +42,11 @@ body {
   background: #282828;
 }
 
-.About-header{
+h5 {
+  font-size: calc(12px + 2vmin) !important;
+  text-align: center;
+}
+.About-header{ 
   padding:20%;
   min-height: 150vh;
   display:flex;
@@ -51,6 +58,29 @@ body {
   background: #282828;
 }
 
+.Projects-header{
+  padding: 5%;
+  min-height: 150vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background: #282828;
+}
+
+.Certs-header{
+  padding:20%;
+  min-height: 150vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background: #282828;
+}
 .badges {
   padding:5%;
   text-decoration: underline !important;
@@ -73,7 +103,7 @@ body {
 }
 
 #highlight {
-  color: #fbf1c7;
+  color: #fbf1c7 !important;
 }
 .App-link {
   color: #61dafb;
