@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import {Navigation, Landing, MainContent} from './Components';
 
 var App = () => { 
