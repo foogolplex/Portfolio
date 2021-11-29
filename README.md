@@ -1,2 +1,2 @@
 # Portfolio
-It uses React, Node.js, Material UI, and Vanta.js for the background.
+The stack is React and Node.js. It uses React-Bootstrap and Material UI for styling and components.
