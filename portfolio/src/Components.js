@@ -11,7 +11,7 @@ function Project(props){
         <div className="col" style={{textAlign: 'center'}}>
             <h4 className="display-7">{props.ProjName}</h4>
             <div className="thumbnail">
-              <img src={props.thumbnail} width="200px" height="100px"></img>
+              <img src={props.thumbnail} width="200px" height="100px" alt="Cannot display images on your browser."></img>
             </div>
             <Button variant="outline-secondary" href={props.Demo} target="_blank" rel="noopener noreferrer">Live Demo</Button>
             <Button variant="outline-secondary" href={props.Github} target="_blank" rel="noopener noreferrer">Source</Button>
