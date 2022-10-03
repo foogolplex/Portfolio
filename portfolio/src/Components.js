@@ -11,10 +11,10 @@ function Project(props){
         <div className="col" style={{textAlign: 'center'}}>
             <h4 className="display-7">{props.ProjName}</h4>
             <div className="thumbnail">
-
+              <img src={props.thumbnail} width="200px" height="100px"></img>
             </div>
-            <Button variant="outline-secondary" href={props.Demo}>Live Demo</Button>
-            <Button variant="outline-secondary" href={props.Github}>Source</Button>
+            <Button variant="outline-secondary" href={props.Demo} target="_blank" rel="noopener noreferrer">Live Demo</Button>
+            <Button variant="outline-secondary" href={props.Github} target="_blank" rel="noopener noreferrer">Source</Button>
             <h6>
                 {props.Description}
             </h6>
@@ -62,14 +62,14 @@ var Landing = (props) => {
         {...(checked ? { timeout: 2000 } : {})}>
         <Box>
           <p>Hey there 👋🏻,</p>
-          <h1 className="display-3">I'm <span id="name">Robert Lazarov</span>.</h1>
+          <h1 className="display-3">I'm <span id="name">Robert Wood</span>.</h1>
         </Box>
       </Grow>
       <Grow in={checked}
         style={{ transformOrigin: '0 0 0' }}
         {...(checked ? { timeout: 4000 } : {})}>
         <Box> 
-          <h1 className="display-3">I'm a <Hspan text="Backend Developer" /></h1> 
+          <h1 className="display-3">I'm a <Hspan text="Fullstack Developer" /></h1> 
         </Box> 
       </Grow>
     </div>
@@ -82,24 +82,18 @@ var MainContent = () => {
         <h1 className="display-3" style={{paddingBottom: '2%'}}>🐇</h1>   
         <h1 name="About" className="display-3">About</h1>
         <h5>
-          I'm capable of making a variety of backend applications primarily in <Hspan text="Node.js" /> and <Hspan text="Express.js" />. I'm also comfortable
-          with a few front-end technologies such as <span id="highlight">React</span>
-            , <span id="highlight">Material UI</span>, and <span id="highlight">Reactstrap</span>.
+          I'm capable of making web applications with <Hspan text="Express.js" /> and <Hspan text="React.js" />. I am always working on my skills and I am learning more about TDD/test driven development and unit testing currently.
             <br></br> If I <strong>need</strong> it, I'll <strong>learn</strong> it.
         </h5>
       </div>
       <div className="Projects-header">
-        <h1 name="Projects" className="display-3" style={{paddingBottom: '5%'}}>Projects (Under Construction)</h1>
+        <h1 name="Projects" className="display-3" style={{paddingBottom: '5%'}}>Projects</h1>
         <div className="row" style={{alignItems: 'center'}}>
-            <Project ProjName="Timestamp Microservice" Description="This project is a timestamp microservice that serves timestamps based on parameters given in the url.
-                    The stack is Jest for unit testing, React for the front end, and Express.js as the framework for the backend." Demo="https://timest-microservice.heroku.app" Github="https://github.com/foogolplex/timestamp-microservice"/> 
-            <Project ProjName="Timestamp Microservice" Description="This project is a timestamp microservice that serves timestamps based on parameters given in the url.
-                    The stack is Jest for unit testing, React for the front end, and Express.js as the framework for the backend." Demo="https://timest-microservice.heroku.app" Github="https://github.com/foogolplex/timestamp-microservice"/> 
+            <Project ProjName="MLB Web Scraper" Demo="" thumbnail="./screenshots/mlbwebscraper.png" Description="A django app that scrapes stats of pitchers and batters from the official MLB website — then displays the data in a table. I made this one with a friend." Github="https://github.com/spencerkinney/mlb-web-scraper"/> 
+            <Project ProjName="Seaside Scroll Reader" thumbnail="./screenshots/seasidescroll1.png" Description="A web app for a writer friend that uses a npm package called react-reader as well as vanta.js for the graphics. I had to delve deep into react-reader to figure out how to implement the nonlinear storytelling, night mode, and font size buttons." Demo="https://seasidescroll.netlify.app" Github="https://github.com/foogolplex/Seaside-Scroll"/> 
             <div className="w-100" style={{paddingBottom: '5%'}}></div> 
-            <Project ProjName="Timestamp Microservice" Description="This project is a timestamp microservice that serves timestamps based on parameters given in the url.
-                    The stack is Jest for unit testing, React for the front end, and Express.js as the framework for the backend." Demo="https://timest-microservice.heroku.app" Github="https://github.com/foogolplex/timestamp-microservice"/> 
-            <Project ProjName="Timestamp Microservice" Description="This project is a timestamp microservice that serves timestamps based on parameters given in the url.
-                    The stack is Jest for unit testing, React for the front end, and Express.js as the framework for the backend." Demo="https://timest-microservice.heroku.app" Github="https://github.com/foogolplex/timestamp-microservice"/> 
+            <Project ProjName="Atomicbot" Demo="" Description="A personal discord bot that can serve images from imageboards and can roughly play chess through text commands. Uses a python module called discord.py among other modules." Github="https://github.com/foogolplex/Atomicbot"/> 
+            <Project ProjName="Morph" Demo="" thumbnail="./screenshots/morph_screenshot.png" Description="This is a fractal visualizer written in C++ that uses a graphics library called SDL2. This project uses object oriented programming." Github="https://github.com/foogolplex/Morph"/> 
         </div>
       </div>
       <div className="Certs-header">
